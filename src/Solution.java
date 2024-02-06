@@ -5,7 +5,7 @@ class Solution {
     public static String addBoldTag(String s, List<String> words) {
         final int n = s.length();
         StringBuilder sb = new StringBuilder();
-        // bold[i] := true if s[i] should be bolded
+
         boolean[] bold = new boolean[n];
 
         int boldEnd = -1; // s[i:boldEnd] should be bolded
