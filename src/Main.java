@@ -21,11 +21,7 @@ public class Main {
 
     public static void main(String[] args){
         Main solution = new Main();
-
         String test1 = "abcabcbb";
         System.out.println(solution.lengthOfLongestSubstring(test1));
-
-
-
     }
 }
