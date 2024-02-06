@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class NumIsland {
     public int numIslands(char[][] grid) {
         int count = 0;
@@ -10,7 +12,6 @@ public class NumIsland {
                 }
             }
         }
-//
         return count;
     }
 
@@ -23,5 +24,15 @@ public class NumIsland {
         clearRestOfLand(grid, i, j+1);
         clearRestOfLand(grid, i, j-1);
         return;
+    }
+    public static void main(String[] args){
+        NumIsland solution = new NumIsland();
+        char[][] grid1 = {
+                {'1', '1', '1', '1', '0'},
+                {'1', '1', '0', '1', '0'},
+                {'1', '1', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'}
+        };
+        System.out.println(solution.numIslands(grid1));
     }
 }
